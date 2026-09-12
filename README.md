@@ -404,6 +404,6 @@ No documented future-work plan exists in the project files; none is claimed here
 
 ## Author
 
-**Manchikanti Surya Vardhan**
+Manchikanti Surya Vardhan
 M.Tech VLSI Design
 Vellore Institute of Technology
