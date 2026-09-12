@@ -1,0 +1,1508 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Sat Mar  7 16:26:00 2026
+Host:		ic312.vit.ac.in (x86_64 w/Linux 4.18.0-425.19.2.el8_7.x86_64) (12cores*20cpus*12th Gen Intel(R) Core(TM) i7-12700 25600KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		[16:26:00.328570] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+<CMD> win
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat alarm_clock_top
+#% Begin load design ... (date=03/07 16:26:42, mem=1001.5M)
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'alarm_clock_top' saved by 'Innovus' '21.15-s110_1' on 'Sun Mar 1 16:49:00 2026'.
+% Begin Load MMMC data ... (date=03/07 16:26:42, mem=1003.7M)
+% End Load MMMC data ... (date=03/07 16:26:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=1004.9M, current mem=1004.9M)
+rc_corners
+
+Loading LEF file /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/libs/lef/gsclib090_translated_ref.lef ...
+**WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+Set DBUPerIGU to M2 pitch 580.
+
+Loading LEF file /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/libs/lef/gsclib090_translated.lef ...
+**WARN: (IMPLF-119):	LAYER 'Oxide' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Poly' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Nhvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Nimp' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Phvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Pimp' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Nzvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'SiProt' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Cont' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Via1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Via2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Via3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Via4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Via5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'Metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-119) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1X' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1V' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1H' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1XR90' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1_2CUT_E' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1_2CUT_W' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1_2CUT_N' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1_2CUT_S' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1_2X2CUT' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2X' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2H' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2V' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2XR90' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2TOS' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2TOS_S' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2TOS_N' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2_2CUT_N' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2_2CUT_S' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2_2CUT_E' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2_2CUT_W' definition already exists in the database. The current definition will be ignored. Ensure that you have not specified duplicate LEF files or LEF files with duplicate via definition.
+Type 'man IMPLF-223' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-223) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-151):	The viaRule 'VIA1ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'VIA2ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'VIA3ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'VIA4ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'VIA5ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'VIA6ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'VIA7ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'VIA8ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M9_M8v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M8_M7v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M7_M6v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M6_M5v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M5_M4v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M4_M3v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M3_M2v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M2_M1v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M1_POv' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M1_DIFF' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M1_PSUB' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M1_PIMP' has been defined, the content will be skipped.
+**WARN: (EMS-27):	Message (IMPLF-151) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (IMPLF-58):	MACRO 'OAI2BB1X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'OA22X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'NAND3X8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFFRX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'TLATSRX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'OAI2BB1X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DLY4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'ADDFX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'CLKAND2X12' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'MXI3XL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'NAND3X6' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFFRX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'MX3X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFFSRHQX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'OAI33XL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'TLATSRX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFFHQX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AOI221X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'ADDFX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AOI22XL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+Loading LEF file /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/libs/lef/gsclib090_tech.lef ...
+
+Loading LEF file /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/libs/lef/gsclib090_macro.lef ...
+**WARN: (IMPLF-61):	974 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-61' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/viewDefinition.tcl
+Reading max_timing timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib' ...
+Read 479 cells in library 'slow' 
+Reading min_timing timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/fast.lib' ...
+Read 479 cells in library 'fast' 
+*** End library_loading (cpu=0.01min, real=0.02min, mem=40.0M, fe_cpu=0.20min, fe_real=0.72min, fe_mem=1054.7M) ***
+% Begin Load netlist data ... (date=03/07 16:26:43, mem=1027.6M)
+*** Begin netlist parsing (mem=1054.7M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 479 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/alarm_clock_top.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1061.707M, initial mem = 483.863M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1061.7M) ***
+% End Load netlist data ... (date=03/07 16:26:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=1041.6M, current mem=1041.6M)
+Top level cell is alarm_clock_top.
+Hooked 958 DB cells to tlib cells.
+1 empty module found.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell alarm_clock_top ...
+*** Netlist is unique.
+** info: there are 972 modules.
+** info: there are 336 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1108.121M, initial mem = 483.863M) ***
+*info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 290 (derived)
+Vertical Layer M2 offset = 290 (derived)
+Start create_tracks
+Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+Loading preference file /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2reg path_group
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Change floorplan default-technical-site to 'gsclib090site'.
+*Info: initialize multi-corner CTS.
+Total number of combinational cells: 317
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/alarm_clock_top.fp.gz (mem = 1357.2M).
+% Begin Load floorplan data ... (date=03/07 16:26:43, mem=1329.1M)
+*info: reset 360 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+ ... processed partition successfully.
+Reading binary special route file /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/alarm_clock_top.fp.spr.gz (Created by Innovus v21.15-s110_1 on Sun Mar  1 16:48:59 2026, version: 1)
+Convert 0 swires and 0 svias from compressed groups
+28 swires and 98 svias were compressed
+28 swires and 18 svias were decompressed from small or sparse groups
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1329.1M, current mem=1329.1M)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=03/07 16:26:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=1331.6M, current mem=1331.6M)
+Reading congestion map file /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/alarm_clock_top.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=03/07 16:26:43, mem=1331.6M)
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=03/07 16:26:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=1332.6M, current mem=1332.6M)
+Loading place ...
+% Begin Load placement data ... (date=03/07 16:26:43, mem=1332.6M)
+Reading placement file - /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/alarm_clock_top.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Sun Mar  1 16:48:59 2026, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1359.2M) ***
+Total net length = 2.934e+03 (1.313e+03 1.620e+03) (ext = 1.032e+03)
+% End Load placement data ... (date=03/07 16:26:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=1333.7M, current mem=1333.7M)
+% Begin Load routing data ... (date=03/07 16:26:43, mem=1333.7M)
+Reading routing file - /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/alarm_clock_top.route.gz.
+Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Sun Mar  1 16:48:59 2026 Format: 20.1) ...
+*** Total 360 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1356.2M) ***
+% End Load routing data ... (date=03/07 16:26:44, total cpu=0:00:00.0, real=0:00:01.0, peak res=1335.4M, current mem=1334.6M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/alarm_clock_top.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1359.2M) ***
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/libs/mmmc/gpdk090.lef.extended.CapTbl ...
+Cap table was created using Encounter 05.20-s112_1.
+Process name: gpdk090_9l.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst_case
+    RC-Corner Name        : rc_corners
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '/home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/libs/mmmc/gpdk090.lef.extended.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+ 
+ Analysis View: best_case
+    RC-Corner Name        : rc_corners
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '/home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat/libs/mmmc/gpdk090.lef.extended.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed.
+% Begin Load power constraints ... (date=03/07 16:26:44, mem=1350.0M)
+% End Load power constraints ... (date=03/07 16:26:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=1350.1M, current mem=1350.1M)
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (EMS-27):	Message (IMPCTE-290) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+max_delay min_delay
+% Begin load AAE data ... (date=03/07 16:26:44, mem=1401.0M)
+AAE DB initialization (MEM=1457.46 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=03/07 16:26:44, total cpu=0:00:00.4, real=0:00:00.0, peak res=1407.6M, current mem=1407.6M)
+Total number of combinational cells: 317
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+#% End load design ... (date=03/07 16:26:44, total cpu=0:00:01.8, real=0:00:02.0, peak res=1431.5M, current mem=1407.8M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-151           49  The viaRule '%s' has been defined, the c...
+WARNING   IMPLF-58           974  MACRO '%s' has been found in the databas...
+WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+ERROR     IMPLF-223          206  The LEF via '%s' definition already exis...
+WARNING   IMPLF-105            4  The layer '%s' specified in SAMENET spac...
+WARNING   IMPLF-119           27  LAYER '%s' has been found in the databas...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+WARNING   IMPCTE-290         152  Could not locate cell %s in any library ...
+*** Message Summary: 2169 warning(s), 206 error(s)
+
+<CMD> fit
+<CMD> getFillerMode -quiet
+best_case worst_case
+const
+/dev/null
+max_delay min_delay
+max_timing min_timing
+rc_corners
+<CMD> create_ccopt_clock_tree_spec
+Creating clock tree spec for modes (timing configs): const
+extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Ignoring AAE DB Resetting ...
+Analyzing clock structure...
+Analyzing clock structure done.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Extracting original clock gating for clk...
+  clock_tree clk contains 67 sinks and 0 clock gates.
+Extracting original clock gating for clk done.
+The skew group clk/const was created. It contains 67 sinks and 1 sources.
+Checking clock tree convergence...
+Checking clock tree convergence done.
+<CMD> ctd_win -side none -id ctd_window
+Clock tree timing engine global stage delay update for max_delay:setup.late...
+Clock tree timing engine global stage delay update for max_delay:setup.late done. (took cpu=0:00:00.0 real=0:00:00.3)
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix alarm_clock_top_preCTS -outDir timingReports
+AAE DB initialization (MEM=1914.11 CPU=0:00:00.0 REAL=0:00:00.0) 
+*** timeDesign #1 [begin] : totSession cpu/real = 0:00:17.3/0:01:26.1 (0.2), mem = 1914.1M
+Setting timing_disable_library_data_to_data_checks to 'true'.
+Setting timing_disable_user_data_to_data_checks to 'true'.
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1904.1M)
+Extraction called for design 'alarm_clock_top' of instances=336 and nets=360 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design alarm_clock_top.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 1912.105M)
+Starting delay calculation for Setup views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: alarm_clock_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1932.47)
+Total number of fetched objects 356
+End delay calculation. (MEM=2036.37 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2036.37 CPU=0:00:00.1 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.1 real=0:00:01.0 totSessionCpu=0:00:17.6 mem=2028.4M)
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ worst_case 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  6.461  |  6.461  |  7.145  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   102   |   67    |   52    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 69.998%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.33 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 2005.785156 Mbytes
+*** timeDesign #1 [finish] : cpu/real = 0:00:00.3/0:00:00.9 (0.4), totSession cpu/real = 0:00:17.6/0:01:27.0 (0.2), mem = 2005.8M
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -hold -pathReports -slackReports -numPaths 50 -prefix alarm_clock_top_preCTS -outDir timingReports
+*** timeDesign #2 [begin] : totSession cpu/real = 0:00:17.9/0:01:30.5 (0.2), mem = 2005.8M
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1977.3M)
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: alarm_clock_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1989.83)
+*** Calculating scaling factor for min_timing libraries using the default operating condition of each library.
+Total number of fetched objects 356
+End delay calculation. (MEM=2038.3 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2038.3 CPU=0:00:00.0 REAL=0:00:00.0)
+Turning on fast DC mode.
+*** Done Building Timing Graph (cpu=0:00:00.1 real=0:00:00.0 totSessionCpu=0:00:18.0 mem=2038.3M)
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Hold views included:
+ best_case 
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -0.212  | -0.212  |  1.729  |
+|           TNS (ns):| -8.907  | -8.907  |  0.000  |
+|    Violating Paths:|   66    |   66    |    0    |
+|          All Paths:|   102   |   67    |   52    |
++--------------------+---------+---------+---------+
+
+Density: 69.998%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.19 sec
+Total Real time: 0.0 sec
+Total Memory Usage: 1969.789062 Mbytes
+*** timeDesign #2 [finish] : cpu/real = 0:00:00.2/0:00:00.2 (1.0), totSession cpu/real = 0:00:18.1/0:01:30.7 (0.2), mem = 1969.8M
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -postCTS -hold
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 1674.0M, totSessionCpu=0:00:19 **
+*** optDesign #1 [begin] : totSession cpu/real = 0:00:19.2/0:01:44.8 (0.2), mem = 1970.0M
+GigaOpt running with 1 threads.
+*** InitOpt #1 [begin] (optDesign #1) : totSession cpu/real = 0:00:19.2/0:01:44.8 (0.2), mem = 1970.0M
+**INFO: User settings:
+setExtractRCMode -engine                            preRoute
+setUsefulSkewMode -maxAllowedDelay                  1
+setUsefulSkewMode -noBoundary                       false
+setDelayCalMode -enable_high_fanout                 true
+setDelayCalMode -engine                             aae
+setDelayCalMode -ignoreNetLoad                      false
+setDelayCalMode -socv_accuracy_mode                 low
+setOptMode -fixCap                                  true
+setOptMode -fixFanoutLoad                           false
+setOptMode -fixTran                                 true
+setPlaceMode -place_design_floorplan_mode           false
+setPlaceMode -place_detail_check_route              false
+setPlaceMode -place_detail_preserve_routing         true
+setPlaceMode -place_detail_remove_affected_routing  false
+setPlaceMode -place_detail_swap_eeq_cells           false
+setPlaceMode -place_global_clock_gate_aware         true
+setPlaceMode -place_global_cong_effort              auto
+setPlaceMode -place_global_ignore_scan              true
+setPlaceMode -place_global_ignore_spare             false
+setPlaceMode -place_global_module_aware_spare       false
+setPlaceMode -place_global_place_io_pins            true
+setPlaceMode -place_global_reorder_scan             true
+setPlaceMode -powerDriven                           false
+setPlaceMode -timingDriven                          true
+setAnalysisMode -analysisType                       bcwc
+setAnalysisMode -checkType                          setup
+setAnalysisMode -clkSrcPath                         true
+setAnalysisMode -clockPropagation                   forcedIdeal
+setAnalysisMode -virtualIPO                         false
+setRouteMode -earlyGlobalHonorMsvRouteConstraint    false
+setRouteMode -earlyGlobalRoutePartitionPinGuide     true
+
+**INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+Need call spDPlaceInit before registerPrioInstLoc.
+Turning off fast DC mode.
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 1701.9M, totSessionCpu=0:00:20 **
+*** optDesign -postCTS ***
+DRC Margin: user margin 0.0
+Hold Target Slack: user slack 0
+Setup Target Slack: user slack 0;
+setUsefulSkewMode -ecoRoute false
+No user sequential activity specified, applying default sequential activity of "0.2" for Dynamic Power reporting.
+'set_default_switching_activity' finished successfully.
+**WARN: (IMPOPT-3195):	Analysis mode has changed.
+Type 'man IMPOPT-3195' for more detail.
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1941.3M)
+
+Footprint cell information for calculating maxBufDist
+*info: There are 16 candidate Buffer cells
+*info: There are 19 candidate Inverter cells
+
+Compute RC Scale Done ...
+*** InitOpt #1 [finish] (optDesign #1) : cpu/real = 0:00:01.1/0:00:01.1 (1.0), totSession cpu/real = 0:00:20.3/0:01:45.9 (0.2), mem = 2129.3M
+GigaOpt Hold Optimizer is used
+Starting initialization (fixHold) cpu=0:00:00.0 real=0:00:00.0 totSessionCpu=0:00:20.7 mem=2033.3M ***
+*** BuildHoldData #1 [begin] (optDesign #1) : totSession cpu/real = 0:00:20.7/0:01:46.3 (0.2), mem = 2033.3M
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: alarm_clock_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=2047.62)
+*** Calculating scaling factor for min_timing libraries using the default operating condition of each library.
+Total number of fetched objects 356
+End delay calculation. (MEM=2086.83 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2086.83 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.1 real=0:00:00.0 totSessionCpu=0:00:20.8 mem=2086.8M)
+
+Active hold views:
+ best_case
+  Dominating endpoints: 0
+  Dominating TNS: -0.000
+
+Done building cte hold timing graph (fixHold) cpu=0:00:00.2 real=0:00:01.0 totSessionCpu=0:00:20.8 mem=2118.1M ***
+Done building hold timer [1184 node(s), 1572 edge(s), 1 view(s)] (fixHold) cpu=0:00:00.2 real=0:00:01.0 totSessionCpu=0:00:20.8 mem=2118.1M ***
+Starting delay calculation for Setup views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: alarm_clock_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=2106.57)
+*** Calculating scaling factor for max_timing libraries using the default operating condition of each library.
+Total number of fetched objects 356
+End delay calculation. (MEM=2092.35 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2092.35 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.1 real=0:00:00.0 totSessionCpu=0:00:21.0 mem=2092.4M)
+
+Active setup views:
+ worst_case
+  Dominating endpoints: 0
+  Dominating TNS: -0.000
+
+Done building cte setup timing graph (fixHold) cpu=0:00:00.3 real=0:00:01.0 totSessionCpu=0:00:21.0 mem=2123.6M ***
+
+*Info: minBufDelay = 99.6 ps, libStdDelay = 36.0 ps, minBufSize = 18165600 (6.0)
+*Info: worst delay setup view: worst_case
+
+------------------------------------------------------------------
+     Hold Opt Initial Summary
+------------------------------------------------------------------
+
+Setup views included:
+ worst_case
+Hold views included:
+ best_case
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  6.462  |  6.462  |  7.145  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   102   |   67    |   52    |
++--------------------+---------+---------+---------+
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -0.212  | -0.212  |  1.729  |
+|           TNS (ns):| -8.907  | -8.907  |  0.000  |
+|    Violating Paths:|   66    |   66    |    0    |
+|          All Paths:|   102   |   67    |   52    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 69.998%
+------------------------------------------------------------------
+**optDesign ... cpu = 0:00:02, real = 0:00:02, mem = 1833.9M, totSessionCpu=0:00:21 **
+*** BuildHoldData #1 [finish] (optDesign #1) : cpu/real = 0:00:00.8/0:00:00.8 (1.0), totSession cpu/real = 0:00:21.4/0:01:47.1 (0.2), mem = 2087.7M
+*** HoldOpt #1 [begin] (optDesign #1) : totSession cpu/real = 0:00:21.4/0:01:47.1 (0.2), mem = 2087.7M
+*info: Run optDesign holdfix with 1 thread.
+Info: 0 don't touch net , 1 undriven net  excluded from IPO operation.
+Info: 1 clock net  excluded from IPO operation.
+Info: Done creating the CCOpt slew target map.
+
+*** Starting Core Fixing (fixHold) cpu=0:00:00.8 real=0:00:01.0 totSessionCpu=0:00:21.5 mem=2144.9M density=69.998% ***
+
+Phase I ......
+Executing transform: ECO Safe Resize
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+|Iter|  WNS   |  TNS    |  #VP   |  #Buffer  |  #Resize(F/F)  | Density |    Real    |   Mem   |
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+|   0|  -0.212|    -8.91|      66|          0|       0(     0)|   70.00%|   0:00:00.0|  2154.9M|
+|   1|  -0.212|    -8.91|      66|          0|       0(     0)|   70.00%|   0:00:00.0|  2154.9M|
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+Executing transform: AddBuffer + LegalResize
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+|Iter|  WNS   |  TNS    |  #VP   |  #Buffer  |  #Resize(F/F)  | Density |    Real    |   Mem   |
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+|   0|  -0.212|    -8.91|      66|          0|       0(     0)|   70.00%|   0:00:00.0|  2154.9M|
+|   1|  -0.212|    -8.22|      61|         13|       0(     0)|   75.79%|   0:00:00.0|  2196.6M|
+|   2|  -0.212|    -7.16|      55|         15|       0(     0)|   80.08%|   0:00:01.0|  2197.6M|
+|   3|  -0.212|    -6.27|      53|         26|       0(     0)|   83.74%|   0:00:00.0|  2197.6M|
+|   4|  -0.212|    -6.23|      53|          0|      10(     1)|   83.95%|   0:00:00.0|  2197.6M|
+|   5|  -0.212|    -6.21|      52|          0|       4(     0)|   84.07%|   0:00:00.0|  2197.6M|
+|   6|  -0.212|    -6.20|      51|          0|       1(     0)|   84.19%|   0:00:00.0|  2197.6M|
+|   7|  -0.212|    -6.20|      51|          0|       0(     0)|   84.19%|   0:00:00.0|  2197.6M|
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+
+*info:    Total 54 cells added for Phase I
+*info:        in which 0 is ripple commits (0.000%)
+*info:    Total 15 instances resized for Phase I
+*info:        in which 1 FF resizing 
+*info:        in which 0 ripple resizing (0.000%)
+
+Phase II ......
+Executing transform: AddBuffer
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+|Iter|  WNS   |  TNS    |  #VP   |  #Buffer  |  #Resize(F/F)  | Density |    Real    |   Mem   |
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+|   0|  -0.212|    -6.20|      51|          0|       0(     0)|   84.19%|   0:00:00.0|  2205.6M|
+|   1|  -0.212|    -6.20|      51|          0|       0(     0)|   84.19%|   0:00:01.0|  2205.6M|
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+
+Phase III ......
+Executing transform: AddBuffer + LegalResize
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+|Iter|  WNS   |  TNS    |  #VP   |  #Buffer  |  #Resize(F/F)  | Density |    Real    |   Mem   |
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+|   0|  -0.212|    -6.20|      51|          0|       0(     0)|   84.19%|   0:00:00.0|  2205.6M|
+|   1|  -0.212|    -6.06|      48|          0|      11(    10)|   84.28%|   0:00:00.0|  2205.6M|
+|   2|  -0.212|    -6.06|      48|          0|       0(     0)|   84.28%|   0:00:00.0|  2205.6M|
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+*info:    Total 11 instances resized for Phase III
+*info:        in which 10 FF resizing 
+*info:        in which 0 ripple resizing (0.000%)
+
+Phase IV ......
+Executing transform: AddBuffer + Resize
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+|Iter|  WNS   |  TNS    |  #VP   |  #Buffer  |  #Resize(F/F)  | Density |    Real    |   Mem   |
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+|   0|  -0.212|    -6.06|      48|          0|       0(     0)|   84.28%|   0:00:00.0|  2205.6M|
+**Info: Stopping hold fixing due to density exceeding max design density 95.000%
+|   1|  -0.212|    -2.93|      31|         21|       0(     0)|   95.59%|   0:00:00.0|  2199.1M|
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+
+*info:    Total 21 cells added for Phase IV
+*info:        in which 0 is ripple commits (0.000%)
+
+
+=======================================================================
+                Reasons for remaining hold violations
+=======================================================================
+*info: Total 151 net(s) have violated hold timing slacks.
+
+Buffering failure reasons
+------------------------------------------------
+
+Resizing failure reasons
+------------------------------------------------
+*info:     2 net(s): Could not be fixed because of no legal loc.
+*info:     4 net(s): Could not be fixed because of hold slack degradation.
+
+
+*** Finished Core Fixing (fixHold) cpu=0:00:02.8 real=0:00:03.0 totSessionCpu=0:00:23.4 mem=2209.1M density=95.590% ***
+
+*info:
+*info: Added a total of 75 cells to fix/reduce hold violation
+*info:
+*info: Summary: 
+*info:           26 cells of type 'CLKBUFX2' used
+*info:           12 cells of type 'DLY1X1' used
+*info:            7 cells of type 'DLY1X4' used
+*info:           19 cells of type 'DLY2X1' used
+*info:            8 cells of type 'DLY3X1' used
+*info:            3 cells of type 'DLY4X1' used
+*info:
+*info: Total 26 instances resized
+*info:       in which 11 FF resizing
+*info:
+
+*** Starting refinePlace (0:00:23.4 mem=2193.1M) ***
+Total net bbox length = 5.256e+03 (2.474e+03 2.782e+03) (ext = 4.009e+02)
+**WARN: (IMPSP-5140):	Global net connect rules have not been created. Added  insts would have no supply connectivity, and would fail DRC.
+Type 'man IMPSP-5140' for more detail.
+**WARN: (IMPSP-315):	Found 411 instances insts with no PG Term connections.
+Type 'man IMPSP-315' for more detail.
+Move report: Detail placement moves 296 insts, mean move: 2.46 um, max move: 13.34 um 
+	Max move on inst (tc/sec_reg[4]): (23.78, 31.32) --> (13.05, 28.71)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2193.1MB
+Summary Report:
+Instances move: 296 (out of 411 movable)
+Instances flipped: 0
+Mean displacement: 2.46 um
+Max displacement: 13.34 um (Instance: tc/sec_reg[4]) (23.78, 31.32) -> (13.05, 28.71)
+	Length: 21 sites, height: 1 rows, site name: gsclib090site, cell type: DFFQXL
+Total net bbox length = 5.669e+03 (2.744e+03 2.925e+03) (ext = 4.011e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2193.1MB
+*** Finished refinePlace (0:00:23.5 mem=2193.1M) ***
+*** maximum move = 13.34 um ***
+*** Finished re-routing un-routed nets (2193.1M) ***
+
+*** Finish Physical Update (cpu=0:00:00.0 real=0:00:00.0 mem=2193.1M) ***
+*** Finish Post CTS Hold Fixing (cpu=0:00:02.8 real=0:00:03.0 totSessionCpu=0:00:23.5 mem=2203.1M density=95.590%) ***
+**INFO: total 385 insts, 387 nets marked don't touch
+**INFO: total 385 insts, 387 nets marked don't touch DB property
+**INFO: total 385 insts, 387 nets unmarked don't touch
+
+*** HoldOpt #1 [finish] (optDesign #1) : cpu/real = 0:00:02.0/0:00:02.1 (1.0), totSession cpu/real = 0:00:23.5/0:01:49.2 (0.2), mem = 2109.0M
+*** Steiner Routed Nets: 30.556%; Threshold: 100; Threshold for Hold: 100
+Re-routed 0 nets
+GigaOpt_HOLD: Recover setup timing after hold fixing
+GigaOpt_HOLD: max_tran 0 => 0, max_cap 0 => 0 (threshold 10) - Skip drv recovery
+GigaOpt: WNS changes after routing: 0.000 -> 0.000 (bump = 0.0)
+GigaOpt: WNS bump threshold: 0.018
+GigaOpt: Skipping postEco optimization
+GigaOpt: WNS changes after postEco optimization: 0.000 -> 0.000 (bump = 0.0)
+GigaOpt: Skipping nonLegal postEco optimization
+
+Active setup views:
+ worst_case
+  Dominating endpoints: 0
+  Dominating TNS: -0.000
+
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] Metal1 has single uniform track structure
+[NR-eGR] Metal2 has single uniform track structure
+[NR-eGR] Metal3 has single uniform track structure
+[NR-eGR] Metal4 has single uniform track structure
+[NR-eGR] Metal5 has single uniform track structure
+[NR-eGR] Metal6 has single uniform track structure
+[NR-eGR] Metal7 has single uniform track structure
+[NR-eGR] Metal8 has single uniform track structure
+[NR-eGR] Metal9 has single uniform track structure
+[NR-eGR] Read 224 PG shapes
+[NR-eGR] Read 0 clock shapes
+[NR-eGR] Read 0 other shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 0
+[NR-eGR] #PG Blockages       : 224
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] #Clock Blockages    : 0
+[NR-eGR] #Other Blockages    : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read 432 nets ( ignored 0 )
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 432
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 432 net(s) in layer range [2, 9]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 6.256170e+03um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]        Layer             (1-0)    OverCon
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  Metal1 ( 1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal2 ( 2)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal3 ( 3)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal4 ( 4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal5 ( 5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal6 ( 6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal7 ( 7)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal8 ( 8)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal9 ( 9)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]        Total         0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+[NR-eGR] Finished Early Global Route kernel ( CPU: 0.01 sec, Real: 0.01 sec, Curr Mem: 2147.19 MB )
+[hotspot] +------------+---------------+---------------+
+[hotspot] |            |   max hotspot | total hotspot |
+[hotspot] +------------+---------------+---------------+
+[hotspot] | normalized |          0.00 |          0.00 |
+[hotspot] +------------+---------------+---------------+
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+[hotspot] Hotspot report including placement blocked areas
+[hotspot] +------------+---------------+---------------+
+[hotspot] |            |   max hotspot | total hotspot |
+[hotspot] +------------+---------------+---------------+
+[hotspot] | normalized |          0.00 |          0.00 |
+[hotspot] +------------+---------------+---------------+
+Local HotSpot Analysis (blockage included): normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Reported timing to dir ./timingReports
+**optDesign ... cpu = 0:00:04, real = 0:00:04, mem = 1815.0M, totSessionCpu=0:00:24 **
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: alarm_clock_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=2081.96)
+*** Calculating scaling factor for min_timing libraries using the default operating condition of each library.
+Total number of fetched objects 431
+End delay calculation. (MEM=2109.91 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2109.91 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.1 real=0:00:01.0 totSessionCpu=0:00:23.7 mem=2109.9M)
+Starting delay calculation for Setup views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: alarm_clock_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=2055.4)
+*** Calculating scaling factor for max_timing libraries using the default operating condition of each library.
+Total number of fetched objects 431
+End delay calculation. (MEM=2114.61 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2114.61 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.1 real=0:00:00.0 totSessionCpu=0:00:23.9 mem=2114.6M)
+
+------------------------------------------------------------------
+     optDesign Final Summary
+------------------------------------------------------------------
+
+Setup views included:
+ worst_case 
+Hold views included:
+ best_case
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  5.847  |  5.847  |  6.929  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   102   |   67    |   52    |
++--------------------+---------+---------+---------+
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -0.212  | -0.212  |  1.729  |
+|           TNS (ns):| -3.009  | -3.009  |  0.000  |
+|    Violating Paths:|   36    |   36    |    0    |
+|          All Paths:|   102   |   67    |   52    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 95.590%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------------
+**optDesign ... cpu = 0:00:05, real = 0:00:05, mem = 1852.2M, totSessionCpu=0:00:24 **
+**WARN: (IMPOPT-3195):	Analysis mode has changed.
+Type 'man IMPOPT-3195' for more detail.
+*** Finished optDesign ***
+Info: Destroy the CCOpt slew target map.
+*** optDesign #1 [finish] : cpu/real = 0:00:04.8/0:00:05.5 (0.9), totSession cpu/real = 0:00:24.0/0:01:50.3 (0.2), mem = 2085.0M
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+<CMD> optDesign -postCTS -hold
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 1767.8M, totSessionCpu=0:00:25 **
+*** optDesign #2 [begin] : totSession cpu/real = 0:00:24.7/0:02:00.2 (0.2), mem = 2011.0M
+GigaOpt running with 1 threads.
+*** InitOpt #1 [begin] (optDesign #2) : totSession cpu/real = 0:00:24.7/0:02:00.2 (0.2), mem = 2011.0M
+**INFO: User settings:
+setExtractRCMode -engine                            preRoute
+setUsefulSkewMode -ecoRoute                         false
+setUsefulSkewMode -maxAllowedDelay                  1
+setUsefulSkewMode -noBoundary                       false
+setDelayCalMode -enable_high_fanout                 true
+setDelayCalMode -engine                             aae
+setDelayCalMode -ignoreNetLoad                      false
+setDelayCalMode -socv_accuracy_mode                 low
+setOptMode -activeHoldViews                         { best_case }
+setOptMode -activeSetupViews                        { worst_case }
+setOptMode -autoHoldViews                           { best_case}
+setOptMode -autoSetupViews                          { worst_case}
+setOptMode -autoTDGRSetupViews                      { worst_case}
+setOptMode -autoViewHoldTargetSlack                 0
+setOptMode -drcMargin                               0
+setOptMode -fixCap                                  true
+setOptMode -fixFanoutLoad                           true
+setOptMode -fixTran                                 true
+setOptMode -setupTargetSlack                        0
+setPlaceMode -place_design_floorplan_mode           false
+setPlaceMode -place_detail_check_route              false
+setPlaceMode -place_detail_preserve_routing         true
+setPlaceMode -place_detail_remove_affected_routing  false
+setPlaceMode -place_detail_swap_eeq_cells           false
+setPlaceMode -place_global_clock_gate_aware         true
+setPlaceMode -place_global_cong_effort              auto
+setPlaceMode -place_global_ignore_scan              true
+setPlaceMode -place_global_ignore_spare             false
+setPlaceMode -place_global_module_aware_spare       false
+setPlaceMode -place_global_place_io_pins            true
+setPlaceMode -place_global_reorder_scan             true
+setPlaceMode -powerDriven                           false
+setPlaceMode -timingDriven                          true
+setAnalysisMode -analysisType                       bcwc
+setAnalysisMode -checkType                          setup
+setAnalysisMode -clkSrcPath                         true
+setAnalysisMode -clockPropagation                   sdcControl
+setAnalysisMode -virtualIPO                         false
+setRouteMode -earlyGlobalHonorMsvRouteConstraint    false
+setRouteMode -earlyGlobalRoutePartitionPinGuide     true
+
+**INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+Need call spDPlaceInit before registerPrioInstLoc.
+**optDesign ... cpu = 0:00:00, real = 0:00:01, mem = 1773.7M, totSessionCpu=0:00:25 **
+*** optDesign -postCTS ***
+DRC Margin: user margin 0.0
+Hold Target Slack: user slack 0
+Setup Target Slack: user slack 0;
+setUsefulSkewMode -ecoRoute false
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=2027.0M)
+*** InitOpt #1 [finish] (optDesign #2) : cpu/real = 0:00:00.4/0:00:00.4 (1.0), totSession cpu/real = 0:00:25.1/0:02:00.7 (0.2), mem = 2027.0M
+GigaOpt Hold Optimizer is used
+Starting initialization (fixHold) cpu=0:00:00.0 real=0:00:00.0 totSessionCpu=0:00:25.6 mem=2035.1M ***
+*** BuildHoldData #1 [begin] (optDesign #2) : totSession cpu/real = 0:00:25.6/0:02:01.1 (0.2), mem = 2035.1M
+Saving timing graph ...
+Done save timing graph
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: alarm_clock_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=2052.07)
+*** Calculating scaling factor for min_timing libraries using the default operating condition of each library.
+Total number of fetched objects 431
+End delay calculation. (MEM=2051.4 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2051.4 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.1 real=0:00:00.0 totSessionCpu=0:00:25.8 mem=2051.4M)
+Done building cte hold timing graph (fixHold) cpu=0:00:00.3 real=0:00:00.0 totSessionCpu=0:00:25.8 mem=2051.4M ***
+Done building hold timer [1322 node(s), 1702 edge(s), 1 view(s)] (fixHold) cpu=0:00:00.3 real=0:00:01.0 totSessionCpu=0:00:25.9 mem=2066.7M ***
+Restoring timing graph ...
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-290):	Could not locate cell INVX1 in any library for view best_case.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (EMS-27):	Message (IMPCTE-290) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+AAE_INFO: Resetting and re-constructing cache for AAE clocks ...
+Done restore timing graph
+Done building cte setup timing graph (fixHold) cpu=0:00:00.5 real=0:00:01.0 totSessionCpu=0:00:26.0 mem=2066.7M ***
+
+*Info: minBufDelay = 99.6 ps, libStdDelay = 36.0 ps, minBufSize = 18165600 (6.0)
+*Info: worst delay setup view: worst_case
+
+------------------------------------------------------------------
+     Hold Opt Initial Summary
+------------------------------------------------------------------
+
+Setup views included:
+ worst_case
+Hold views included:
+ best_case
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  5.847  |  5.847  |  6.929  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   102   |   67    |   52    |
++--------------------+---------+---------+---------+
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -0.212  | -0.212  |  1.729  |
+|           TNS (ns):| -3.009  | -3.009  |  0.000  |
+|    Violating Paths:|   36    |   36    |    0    |
+|          All Paths:|   102   |   67    |   52    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 95.590%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------------
+**optDesign ... cpu = 0:00:02, real = 0:00:02, mem = 1790.9M, totSessionCpu=0:00:27 **
+*** BuildHoldData #1 [finish] (optDesign #2) : cpu/real = 0:00:00.9/0:00:01.0 (1.0), totSession cpu/real = 0:00:26.5/0:02:02.0 (0.2), mem = 2031.8M
+*** HoldOpt #1 [begin] (optDesign #2) : totSession cpu/real = 0:00:26.5/0:02:02.0 (0.2), mem = 2031.8M
+*info: Run optDesign holdfix with 1 thread.
+Info: 0 don't touch net , 1 undriven net  excluded from IPO operation.
+Info: 1 clock net  excluded from IPO operation.
+Info: Done creating the CCOpt slew target map.
+
+*** Starting Core Fixing (fixHold) cpu=0:00:01.0 real=0:00:01.0 totSessionCpu=0:00:26.6 mem=2213.4M density=95.590% ***
+
+Phase I ......
+Executing transform: ECO Safe Resize
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+|Iter|  WNS   |  TNS    |  #VP   |  #Buffer  |  #Resize(F/F)  | Density |    Real    |   Mem   |
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+**Info: Stopping hold fixing due to density exceeding max design density 95.000%
+|   0|  -0.212|    -3.01|      36|          0|       0(     0)|   95.59%|   0:00:00.0|  2213.4M|
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+Executing transform: AddBuffer + LegalResize
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+|Iter|  WNS   |  TNS    |  #VP   |  #Buffer  |  #Resize(F/F)  | Density |    Real    |   Mem   |
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+**Info: Stopping hold fixing due to density exceeding max design density 95.000%
+|   0|  -0.212|    -3.01|      36|          0|       0(     0)|   95.59%|   0:00:00.0|  2213.4M|
++----+--------+---------+--------+-----------+----------------+---------+------------+---------+
+
+
+=======================================================================
+                Reasons for remaining hold violations
+=======================================================================
+*info: Total 173 net(s) have violated hold timing slacks.
+
+Buffering failure reasons
+------------------------------------------------
+
+Resizing failure reasons
+------------------------------------------------
+
+
+*** Finished Core Fixing (fixHold) cpu=0:00:01.0 real=0:00:01.0 totSessionCpu=0:00:26.6 mem=2213.4M density=95.590% ***
+
+
+*** Finish Post CTS Hold Fixing (cpu=0:00:01.0 real=0:00:01.0 totSessionCpu=0:00:26.6 mem=2213.4M density=95.590%) ***
+**INFO: total 379 insts, 379 nets marked don't touch
+**INFO: total 379 insts, 379 nets marked don't touch DB property
+**INFO: total 379 insts, 379 nets unmarked don't touch
+
+*** HoldOpt #1 [finish] (optDesign #2) : cpu/real = 0:00:00.1/0:00:00.1 (0.9), totSession cpu/real = 0:00:26.6/0:02:02.1 (0.2), mem = 2119.3M
+
+Active setup views:
+ worst_case
+  Dominating endpoints: 0
+  Dominating TNS: -0.000
+
+[NR-eGR] Started Early Global Route kernel ( Curr Mem: 2157.47 MB )
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] Metal1 has single uniform track structure
+[NR-eGR] Metal2 has single uniform track structure
+[NR-eGR] Metal3 has single uniform track structure
+[NR-eGR] Metal4 has single uniform track structure
+[NR-eGR] Metal5 has single uniform track structure
+[NR-eGR] Metal6 has single uniform track structure
+[NR-eGR] Metal7 has single uniform track structure
+[NR-eGR] Metal8 has single uniform track structure
+[NR-eGR] Metal9 has single uniform track structure
+[NR-eGR] Read 224 PG shapes
+[NR-eGR] Read 0 clock shapes
+[NR-eGR] Read 0 other shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 0
+[NR-eGR] #PG Blockages       : 224
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] #Clock Blockages    : 0
+[NR-eGR] #Other Blockages    : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read 432 nets ( ignored 0 )
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 432
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 432 net(s) in layer range [2, 9]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 6.256170e+03um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]        Layer             (1-0)    OverCon
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  Metal1 ( 1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal2 ( 2)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal3 ( 3)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal4 ( 4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal5 ( 5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal6 ( 6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal7 ( 7)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal8 ( 8)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal9 ( 9)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]        Total         0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+[NR-eGR] Finished Early Global Route kernel ( CPU: 0.01 sec, Real: 0.01 sec, Curr Mem: 2157.47 MB )
+[hotspot] +------------+---------------+---------------+
+[hotspot] |            |   max hotspot | total hotspot |
+[hotspot] +------------+---------------+---------------+
+[hotspot] | normalized |          0.00 |          0.00 |
+[hotspot] +------------+---------------+---------------+
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+[hotspot] Hotspot report including placement blocked areas
+[hotspot] +------------+---------------+---------------+
+[hotspot] |            |   max hotspot | total hotspot |
+[hotspot] +------------+---------------+---------------+
+[hotspot] | normalized |          0.00 |          0.00 |
+[hotspot] +------------+---------------+---------------+
+Local HotSpot Analysis (blockage included): normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Reported timing to dir ./timingReports
+**optDesign ... cpu = 0:00:02, real = 0:00:02, mem = 1880.2M, totSessionCpu=0:00:27 **
+Saving timing graph ...
+Done save timing graph
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: alarm_clock_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=2138.48)
+*** Calculating scaling factor for min_timing libraries using the default operating condition of each library.
+Total number of fetched objects 431
+End delay calculation. (MEM=2137.81 CPU=0:00:00.0 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=2137.81 CPU=0:00:00.0 REAL=0:00:01.0)
+*** Done Building Timing Graph (cpu=0:00:00.1 real=0:00:01.0 totSessionCpu=0:00:26.8 mem=2137.8M)
+Restoring timing graph ...
+AAE_INFO: Resetting and re-constructing cache for AAE clocks ...
+Done restore timing graph
+
+------------------------------------------------------------------
+     optDesign Final Summary
+------------------------------------------------------------------
+
+Setup views included:
+ worst_case 
+Hold views included:
+ best_case
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  5.847  |  5.847  |  6.929  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   102   |   67    |   52    |
++--------------------+---------+---------+---------+
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -0.212  | -0.212  |  1.729  |
+|           TNS (ns):| -3.009  | -3.009  |  0.000  |
+|    Violating Paths:|   36    |   36    |    0    |
+|          All Paths:|   102   |   67    |   52    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 95.590%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------------
+**optDesign ... cpu = 0:00:02, real = 0:00:03, mem = 1914.9M, totSessionCpu=0:00:27 **
+*** Finished optDesign ***
+Info: Destroy the CCOpt slew target map.
+*** optDesign #2 [finish] : cpu/real = 0:00:02.5/0:00:03.1 (0.8), totSession cpu/real = 0:00:27.2/0:02:03.4 (0.2), mem = 2138.8M

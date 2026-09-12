@@ -1,0 +1,45 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm alarm_clock_tb.alarm_hour alarm_clock_tb.alarm_min alarm_clock_tb.alarm_on alarm_clock_tb.alarm_sec alarm_clock_tb.alarm_set alarm_clock_tb.clk alarm_clock_tb.hour alarm_clock_tb.min alarm_clock_tb.reset alarm_clock_tb.sec alarm_clock_tb.set_hour alarm_clock_tb.set_min alarm_clock_tb.set_sec
+Created probe 1
+ncsim> run
+ncsim: *E,C58EXE: Coverage database file already exists in the test output directory './cov_work/scope/test', and will not be overwritten. Specify a different name for the test output directory or use the '-covoverwrite' option to overwrite the existing test output directory, and rerun the simulation.
+Simulation complete via $finish(1) at time 2040 NS + 0
+./alarm_clock_tb.v:85     $finish;
+ncsim> coverage -analyze
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  alarm_clock_tb(alarm_clock_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_4bd16fe5_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_4bd16fe5_00000000.ucd
+  cpu                :  0.0s system + 0.0s user = 0.0s total
+
+Launching IMC...
+
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  alarm_clock_tb(alarm_clock_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_4bd16fe5_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_4bd16fe5_00000000.ucd
+  cpu                :  0.0s system + 0.0s user = 0.0s total
+ncsim: Memory Usage - 38.6M program + 287.8M data = 326.4M total (337.4M Peak)
+ncsim: CPU Usage - 1.8s system + 0.4s user = 2.2s total (277.2s, 0.8% cpu)

@@ -1,0 +1,80 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sun Mar  1 17:05:55 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+is_common_ui_mode
+restoreDesign /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/postRoute.enc.dat alarm_clock_top
+fit
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix alarm_clock_top_postRoute -outDir timingReports
+ctd_win -side none -id ctd_window
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix alarm_clock_top_postCTS -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix alarm_clock_top_postRoute -outDir timingReports
+setAnalysisMode -checkType hold
+setAnalysisMode -cppr both -clockGatingCheck true -timeBorrowing true -useOutputPinCap true -sequentialConstProp false -timingSelfLoopsNoSkew false -enableMultipleDriveNet true -clkSrcPath true -warn true -usefulSkew true -analysisType onChipVariation -log true
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix alarm_clock_top_postRoute -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+setDelayCalMode -engine default -siAware true
+optDesign -postRoute -hold
+getNanoRouteMode -quiet -routeWithTimingDriven
+setSIMode -acceptableWNS same -maxNrIter 2 -fixDRC 1 -fixHoldIncludeXtalkSetup 1
+setSIMode -save siFix.option
+setSIMode -acceptableWNS same -maxNrIter 2 -fixDRC 1 -fixHoldIncludeXtalkSetup 1
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+setDelayCalMode -engine default -siAware true
+optDesign -postRoute -hold
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -drouteEndIteration default
+setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+setOptMode -effort high -powerEffort low -leakageToDynamicRatio 1 -reclaimArea true -simplifyNetlist true -allEndPoints false -setupTargetSlack 0 -holdTargetSlack 0 -maxDensity 0.95 -drcMargin 0 -usefulSkew true
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+setDelayCalMode -engine default -siAware true
+optDesign -postRoute -hold
+setOptMode -fixCap false -fixTran false -fixFanoutLoad false
+setDelayCalMode -engine default -siAware true
+optDesign -postRoute -hold -incr
+setOptMode -fixCap false -fixTran false -fixFanoutLoad false
+optDesign -postRoute -hold -incr
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix alarm_clock_top_postRoute -outDir timingReports
+displayBufTree -net {}
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail -viaOpt -wireOpt
+getFillerMode -quiet
+addFiller -cell FILL32 FILL4 FILL16 FILL8 FILL64 FILL2 FILL1 -prefix FILLER -doDRC -fitGap
+getCTSMode -engine -quiet
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -hold -pathReports -slackReports -numPaths 50 -prefix alarm_clock_top_postRoute -outDir timingReports
+create_route_type -name clkroute -non_default_rule 2w2s -bottom_preferred_layer Metal8 -top_preferred_layer Metal9
+ccopt_design -cts
+setOptMode -fixCap false -fixTran false -fixFanoutLoad true
+setDelayCalMode -engine default -siAware true
+optDesign -postRoute -hold
+setOptMode -fixCap false -fixTran false -fixFanoutLoad false
+optDesign -postRoute -hold -incr
+setOptMode -fixCap false -fixTran false -fixFanoutLoad false
+optDesign -postRoute -hold -incr

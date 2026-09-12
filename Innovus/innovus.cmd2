@@ -1,0 +1,35 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat Mar  7 16:26:15 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+is_common_ui_mode
+restoreDesign /home/vlsi/Desktop/25MVD1032_ASIC/Alarm_clock/Innovus/placement.enc.dat alarm_clock_top
+fit
+getFillerMode -quiet
+create_ccopt_clock_tree_spec
+ctd_win -side none -id ctd_window
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix alarm_clock_top_preCTS -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -hold -pathReports -slackReports -numPaths 50 -prefix alarm_clock_top_preCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postCTS -hold
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -postCTS -hold
